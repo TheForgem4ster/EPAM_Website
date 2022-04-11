@@ -1,0 +1,132 @@
+body{
+    margin: auto;
+}
+.block{
+    display: grid;
+    justify-items: center;
+    width: 100%;
+    font-size: 0px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+.block[id= "first"]{
+    background-color: #DE2B24;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    column-gap: 0px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.text_title{
+    font-family: "Helvetica Neue Bol";
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+}
+.text_comment{
+    font-family: "Helvetica Neue Bol";
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+.strip{
+    border-top: 5px solid white;
+    margin-top: 17px;
+    margin-bottom: 47px;
+    width: 47px;
+    
+}
+
+.place{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F35E59;
+    width: 1fr;
+    height: 0px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    vertical-align: top;
+    overflow: hidden;
+}
+.icon{
+    width: 25px;
+    padding-bottom: 2px;
+}
+
+.place_text_title{
+    font-family: "Helvetica Neue Bol";
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+.place_text{
+    font-family: "Helvetica Neue Light";
+    font-size: 10px;
+    font-weight: 100;
+    text-align: center;
+    color: white;
+}
+.image{
+    position: relative;
+    width: 160%;
+    left: -5px;
+}
+.exception_image{
+    position: relative;
+    width: 160%;
+    left: -30px;
+}
+.exception2_image{
+    position: relative;
+    left: -5px;
+    width: 160%;
+}
+.zoom{
+    transition: transform .25s;
+}
+.zoom:hover {
+    transform: scale(1.25);
+}
+.place:hover{
+    background-color: #f5a6a3;
+}
+@media only screen and (min-width:500px){
+    .place{
+        width: 266px;
+        height: 126px;
+    }
+    .icon{
+        padding-bottom: 15px;
+        width: 36px;
+    }
+    .place_text_title{ font-size: 25px; }
+    
+    .place_text{ font-size: 16px; }
+
+    .exception_image{ left: -54px; }
+    
+    .exception2_image{
+        left: -3px;
+        width: 420px;
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width:1220px){
+    .container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100px;
+    }
+    
+}

@@ -1,0 +1,143 @@
+.block[id = "second"]{
+    background-color: #1287BF;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    background: #1287BF;
+    border: 3px solid white;
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+}
+.arrow {
+    transform: rotate(45deg);
+    margin-bottom: 5px;
+    height: 15px;
+    width: 15px;
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+}
+.square{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10px;
+    width: 200px;
+    height: 390px;
+    background-color: white;
+    border-radius: 1%;
+}
+.triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid white;
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+}
+.circle_close {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: -5%;
+    background: #DE2B24;
+    border: 3px solid white;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+}
+.close{
+    font-size: 14px;
+    color: white;
+}
+.rectangular_text{
+    width: 190px;
+    text-align: center;
+    hyphens: auto;
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+.input{
+    width: 150px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 1px solid #a7a7a7;
+}
+.input:focus{
+    outline: none;
+    border: 2px solid #3695c9;
+    box-shadow: 0 0 5px #719ECE;
+}
+.input_submit_first{
+    margin-top: 20px;
+    border: none;
+    border-radius: 3px;
+    width: 180px;
+    height: 45px;
+    background-color: #DE2B24;
+    color: white;
+    font-weight: 600;
+}
+
+.input_submit_first:hover{
+    background-color: #f36f6b;
+}
+.input:valid:not(:placeholder-shown) {
+    border-color: green;
+}
+  
+.input:invalid:not(:placeholder-shown) {
+    border-color: red;
+}
+
+@media only screen and (min-width:300px){
+    .square{
+        width: 250px;
+        height: 400px;
+    }
+    .input{
+        width: 210px;
+        height: 30px;
+    }
+    .square_text{
+        width: 200px;
+    }
+    .close{
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width:800px){
+    .close{
+        font-size: 17px;
+    }
+    .square{
+        width: 630px;
+        height: 400px;
+    }
+    .input{
+        width: 380px;
+        height: 50px;
+    }
+    .square_text{
+        width: 550px;
+    }
+.rectangular_text{
+    width: 500px;
+}
+}

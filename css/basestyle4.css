@@ -1,0 +1,17 @@
+.block[id = "fourth"]{
+    background-color: #515151;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.fourth_block_subtext{
+    width: 550px;   
+    text-align: center;
+    font-size: 13px;
+    color: #CECECE;
+    font-weight: 400;
+}
+@media only screen and (min-width:670px){
+    .fourth_block_subtext{
+        width: 550px;
+    }
+}
